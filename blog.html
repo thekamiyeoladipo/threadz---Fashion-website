@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threadz</title>
+    <link rel="shortcut icon" href="img/logoipsum-249.svg" type="image/x-icon">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Animate on scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Font-Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--Bootstrap CDN-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+     <style>
+      #blogs {
+        margin-top: 104px;
+      }
+     </style>
+
+</head>
+<body>
+
+          <!--Back to top button-->
+          <button class="scroll-btn" id="myBtn" onclick="topFunction()" style="display: none;">
+            <img class="scroll-icon" src="img/up-arrow (4).svg" alt="">
+          </button>
+          <!--Back to top button-->
+
+           <!--Navigation-->
+           <nav class="navbar navbar-expand-lg bg-body-tertiary navigation-wrap py-4 fixed-top shadow-lg"> 
+            <div class="container">
+              <a class="navbar-brand order-lg-0 d-flex justify-content-between align-items-center" href="#">
+              <img src="img/logoipsum-249.svg" alt="">
+              <span class="fw-lighter text-uppercase ms-2">THREADZ</span>
+              </a>
+
+              <div class="icons order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0
+                    start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0
+                    start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i> 
+                </button>
+              </div>
+
+
+              <!-- menu button-->
+              <button class="navbar-toggler border-0"
+              id="navbartoggler"
+              type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarText" 
+              aria-controls="navbarText" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class=""> <i class="fas fa-long-arrow-right"></i></span>
+              </button>
+              <!-- menu button-->
+
+              <!-- close button-->
+              <button class="navbar-toggler border-0"
+              id="newtoggler"
+              type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarText" 
+              aria-controls="navbarText" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class=""> <i class="fas fa-bolt"></i></span>
+              </button>
+              <!--close button-->
+
+
+              <div class="collapse navbar-collapse order-lg-1" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item px-2 py-2" >
+                      <a class="nav-link text-uppercase text-dark active" aria-current="page" href="index.html#header">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="index.html#newdrop">New Drop</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="index.html#featured">featured</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="index.html#offers">offers</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                    </li>
+                   
+                     
+                     
+                  </ul>
+                  
+              </div>
+
+            </div>
+          </nav>
+          <!--Navigation ends here-->
+
+
+          <!--Blogs-->
+          <section id="blogs" class="py-5">
+            <div class="container">
+              <div class="title text-center py-5">
+              <h2 data-aos="zoom-in" data-aos-duration="1500" class="position-relative d-inline-block">
+                Our Latest Blogs
+              </h2>
+              </div>
+
+              <div class="row g-3">
+
+                  <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="img/img/pexels-lucxama-sylvain-2765557.jpg" alt="">
+                    <div class="card-body px-0 text-center">
+                      <h4 class="card-title text-uppercase">Are black people more fashionable?</h4>
+                      <p class="card-text mt-3 text-muted text-capitalize">
+                        Black people are slowly dominating when it comes to fashion,
+                        is this true or a myth?
+                      </p>
+                      <p class="card-text">
+                        <small class=""> 
+                          <span class="">Author: </span> Niyi Aanu
+                        </small>
+                      </p>
+                      <a href="#" class="btn"> Read More</a>
+                    </div>
+                  </div>
+
+                  <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="img/img/pexels-ficky-2364618.jpg" alt="">
+                    <div class="card-body px-0 text-center">
+                      <h4 class="card-title text-uppercase">Would you match outfits with your patner?</h4>
+                      <p class="card-text mt-3 text-muted text-capitalize text">
+                       would you risk your style
+                      for your patners even if it doesn't really sit well with you.
+                      </p>
+                      <p class="card-text">
+                        <small class=""> 
+                          <span class="">Author: </span>Jesulayin 
+                        </small>
+                      </p>
+                      <a href="#" class="btn"> Read More</a>
+                    </div>
+                  </div>
+
+                  <div class="card border-0 col-md-6 col-lg-4  bg-transparent my-3 ">
+                    <img src="img/img/pexels-pexels-user-10050220.jpg" alt="">
+                    <div class="card-body px-0 text-center">
+                      <h4 class="card-title text-uppercase">Should men adopt women's style of fashion as women do men?</h4>
+                      <p class="card-text text-muted mt-3 text-capitalize">
+                      Controversies about men dressing like women but little or no complains when women dress like men?
+                      Why is that?
+                      </p>
+                      <p class="card-text">
+                        <small class=""> 
+                          <span class="">Author: </span>Shaq
+                        </small>
+                      </p>
+                      <a href="#" class="btn"> Read More</a>
+                    </div>
+                  </div>
+
+                  <div class="card border-0 col-md-6 col-lg-4  bg-transparent my-3 ">
+                    <img src="img/img/pexels-subhan-saad-3613388.jpg" alt="">
+                    <div class="card-body px-0 text-center">
+                      <h4 class="card-title text-uppercase">20 middle eastern styles you should follow in 2023</h4>
+                      <p class="card-text text-muted mt-3 text-capitalize">
+                        Does representation matter? What is so special about the midddle eastern style?
+                      </p>
+                      <p class="card-text">
+                        <small class=""> 
+                          <span class="">Author: </span>Mike
+                        </small>
+                      </p>
+                      <a href="#" class="btn"> Read More</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card border-0 col-md-6 col-lg-4  bg-transparent my-3 ">
+                    <img src="img/img/pexels-cheef-2080753.jpg" alt="">
+                    <div class="card-body px-0 text-center">
+                      <h4 class="card-title text-uppercase">Accessories to make your outfits even better</h4>
+                      <p class="card-text text-muted mt-3 text-capitalize">
+                        Sunglasses, jewelry, blazers?
+                      </p>
+                      <p class="card-text">
+                        <small class=""> 
+                          <span class="">Author: </span>Kenny
+                        </small>
+                      </p>
+                      <a href="#" class="btn"> Read More</a>
+                    </div>
+                  </div>
+
+                  <div class="card border-0 col-md-6 col-lg-4  bg-transparent my-3 ">
+                    <img src="img/img/pexels-ali-pazani-2587464.jpg" alt="">
+                    <div class="card-body px-0 text-center">
+                      <h4 class="card-title text-uppercase">Athletes now making big fashion moves</h4>
+                      <p class="card-text text-muted mt-3 text-capitalize">
+                        Have Athletes ever been on the spotlight in the area of fashion?
+                      </p>
+                      <p class="card-text">
+                        <small class=""> 
+                          <span class="">Author: </span>Raphael
+                        </small>
+                      </p>
+                      <a href="#" class="btn"> Read More</a>
+                    </div>
+                  </div>
+
+
+              </div>
+
+            </div>
+
+          </section>
+          <!--Blogs ends here-->
+
+          <!--Footer starts here-->
+          <footer class="py-5">
+            <div class="container">
+              <div class="row text-white g-4">
+      
+                <div class="col-md-6 col-lg-3">
+                  <a href="index.html" class="text-uppercase text-decoration-none
+                  brand text-white">
+                  <img src="img/logoipsum-249.svg" alt="">
+                  threadz
+                  </a>
+                  <p class="text-white text-muted mt-3">
+                    The greatest approach to save money, build a distinctive wardrobe, and maintain your sense of style is to purchase at Threadz, where you can get one-of-a-kind, high-quality things that are affordable.
+                  </p>
+                </div>
+      
+                <div class="col-md-6 col-lg-3">
+                  <h5 class="fw-light text-uppercase">Links</h5>
+                  <ul class="list-unstyled">
+                    <li class="my-3">
+                      <a href="#header" class="text-white text-decoration-none text-muted">
+                        <i class="fas fa-chevron-right me-1"></i>
+                        Home
+                      </a>
+                    </li>
+                    <li class="my-3">
+                      <a href="#newdrop" class="text-white text-decoration-none text-muted">
+                        <i class="fas fa-chevron-right me-1"></i>
+                        New Drop 
+                      </a>
+                    </li>
+                    <li class="my-3">
+                      <a href="#about" class="text-white text-decoration-none text-muted">
+                        <i class="fas fa-chevron-right me-1"></i>
+                        About Us
+                      </a>
+                    </li>
+                    <li class="my-3">
+                      <a href="blog.html" class="text-white text-decoration-none text-muted">
+                        <i class="fas fa-chevron-right me-1"></i>
+                        Blog
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-md-6 col-lg-3">
+                  <h5 class="fw-light mb-3 text-uppercase">Contact Us</h5>
+                  <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                      <i class="fas fa-map-marked-alt"></i>
+                    </span>
+                    <span class="fw-light">
+                      University of Ibadan
+                    </span>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="fw-light">
+                      threadz@gmail.com
+                    </span>
+                  </div>
+                  <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                    <span class="me-3">
+                      <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span class="fw-light">
+                      0000441112
+                    </span>
+                  </div>
+                </div>
+      
+                <div class="col-md-6 col-lg-3">
+                  <h5 class="fw-light mb-3 text-uppercase">Follow Us</h5>
+                  <div class="d-flex">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                          <i class="fab fa-facebook-f"></i>
+                          Facebook
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                          <i class="fab fa-twitter"></i>
+                          Twitter
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                          <i class="fab fa-instagram"></i>
+                          Instagram
+                        </a>
+                      </li>
+                      <li>
+                        <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                          <i class="fab fa-tiktok"></i>
+                          Tik-Tok
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+           </footer>
+           <!--Footer ends here-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!--Jquery-->
+    <script src="js/jquery-3.6.3.js"></script>
+
+    <!--Bootstrap CDN JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+     <!--Animate on scroll js-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
+
+      <!--Wow Min js-->
+      <script>
+      new WOW().init();
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+@media (min-width: 1000px) {
+    #navbartoggler {
+        visibility: hidden;
+    }
+    #newtoggler {
+        visibility: hidden;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 1rem;
+    }
+    .navbar .icons button {
+        display: none;
+    }
+
+    .carousel-inner h1 {
+        font-size: 30px;
+    }
+
+   
+}

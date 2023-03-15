@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* font-family: 'Kaisei Tokumin', serif;
+font-family: 'Poppins', sans-serif; */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --large-font: 'Kaisei Tokumin', serif;
+    --small-font: 'Poppins', sans-serif;
+    --color-sunred: #ed5c4e;
+}
+
+body {
+    font-family: var(--small-font);
+}
+
+.wrapper {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+
+/*  Buttons  */
+.bg-primary {
+    background-color: var(--color-sunred);
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85,);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: var(--color-sunred);
+    color: #fff;
+    border-color: var(--color-sunred);
+
+}
+
+#blog-btn {
+    background-color: #fff;
+    padding: 10px 28px;
+    border: 1px solid var(--color-sunred);
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#blog-btn:hover {
+    background-color: var(--color-sunred);
+    color: #fff !important;
+}
+
+#newtoggler {
+    display: none;
+}
+
+/* Back to top button */
+.scroll-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    transition: background-color .3s ease-in-out, 
+    opacity .5s, visibility .5s;
+    z-index: 2000;
+    display: none;
+}
+
+.scroll-btn:hover {
+    cursor: pointer;
+    background-color: var(--color-sunred);
+}
+
+.scroll-icon {
+    width: 20px;
+    height: auto;
+}
+
+
+
+
+/* Navbar */
+.navbar-brand img {
+    width: 45px;
+}
+
+.navbar-brand span {
+    letter-spacing: 2px;
+    font-family: var(--large-font);
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+.navbar button span {
+    background-color: var(--color-sunred) !important;
+}
+
+.navbar .navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler span {
+    background-color: transparent!important;
+    font-size: 1.875rem;
+    border: none;
+    outline: none;
+    color: var(--color-sunred) !important;
+}
+
+.navbar-nav a {
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-nav a:hover {
+    color: var(--color-sunred) !important;
+}
+
+.navbar-nav .nav-item .nav-link #blognav {
+    border: 1px solid var(--color-sunred) !important;
+
+}
+
+/* Header */
+#header {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    url(../img/bg/pexels-mitch-lally-15031645.jpg) 
+    top/cover no-repeat;
+    padding-top: 104px; 
+    background-size: cover;
+}
+
+.carousel-inner h1 {
+    font-size: 60px;
+    font-family: var(--large-font);
+}
+
+.carousel-item .btn {
+    border-color: #fff;
+}
+
+/* .carousel-control-prev .carousel-control-prev-icon,
+.carousel-control-next .carousel-control-next-icon {
+    background-color: #ed5c4e;
+} */
+
+/* Collection  */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--color-sunred);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* .title h2::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--color-sunred);
+    top: -50%;
+    right: 20px;
+    transform: translateY(50%);
+
+} */
+
+/* Collection  */
+.active-filter-btn {
+    background-color: var(--color-sunred) !important;
+    color: #fff !important;
+    border-color: var(--color-sunred) !important;
+}
+
+.special-list .btn {
+    padding: 8px 20px !important;
+}
+
+.special-img img {
+    transition: all 0.4s ease;
+}
+
+
+/* Offers  */
+#offers {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    url(../img/bg/pexels-monstera-6311687.jpg) center/cover no-repeat;
+}
+
+#offers .row {
+    min-height: 60vh;
+}
+
+.offers-content span {
+    font-size: 28px;
+}
+
+.offers-content h2 {
+    font-size: 60px;
+    font-family: var(--large-font);
+}
+
+.offers-content .btm {
+    border-color: transparent !important;
+}
+
+/*Newsletter */
+#newsletter {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+
+#newsletter .input-group {
+    max-width: 500px;
+} 
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: var(--color-sunred);
+    color: #fff;
+    border-color: var(--color-sunred);
+}
+#newsletter .btn:hover {
+    background-color: gray;
+    border-color: grey;
+}
+
+/* Footer  */
+footer .brand {
+    font-family: var(--large-font);
+    letter-spacing: 2px;
+}
+
+footer {
+    background-color: var(--color-sunred) !important;
+}
+
+footer a {
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+  transform: translateX(8ox);  
+}
+
+
+

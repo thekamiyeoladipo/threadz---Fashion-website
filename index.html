@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threadz</title>
+    <link rel="shortcut icon" href="img/logoipsum-249.svg" type="image/x-icon">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--Animate on scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Font-Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--Bootstrap CDN-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <!--Back to top button-->
+    <button class="scroll-btn" id="myBtn" onclick="topFunction()" style="display: none;">
+      <img class="scroll-icon" src="img/up-arrow (4).svg" alt="">
+    </button>
+
+
+
+    <!--Navigation-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navigation-wrap py-4 fixed-top shadow-lg"> 
+            <div class="container">
+              <a class="navbar-brand order-lg-0 d-flex justify-content-between align-items-center" href="#">
+              <img src="img/logoipsum-249.svg" alt="">
+              <span class="fw-lighter text-uppercase ms-2">THREADZ</span>
+              </a>
+
+              <div class="icons order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="position-absolute top-0
+                    start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0
+                    start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-search"></i> 
+                </button>
+              </div>
+
+
+              <!-- menu button-->
+              <button class="navbar-toggler border-0"
+              id="navbartoggler"
+              type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarText" 
+              aria-controls="navbarText" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class=""> <i class="fas fa-long-arrow-right"></i></span>
+              </button>
+              <!-- menu button-->
+
+              <!-- close button-->
+              <button class="navbar-toggler border-0"
+              id="newtoggler"
+              type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarText" 
+              aria-controls="navbarText" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class=""> <i class="fas fa-bolt"></i></span>
+              </button>
+              <!--close button-->
+
+
+              <div class="collapse navbar-collapse order-lg-1" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item px-2 py-2" >
+                      <a class="nav-link text-uppercase text-dark active" aria-current="page" href="#header">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="#newdrop">New Drop</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="#featured">featured</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="#offers">offers</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                      <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                    </li>
+                      <li class="nav-item px-2 py-2 border-0">
+                        <a href="blog.html" class="nav-link blog-btn" id="blog-btn">blog</a>
+                      </li>
+                     
+                  </ul>
+                  
+              </div>
+
+            </div>
+          </nav>
+    <!--Navigation ends here-->
+
+
+    <!--Hero starts here-->
+    <header id="header" class="vh-100 carousel slide shadow-lg" data-bs-ride="carousel">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-uppercase text-white">Best collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white">New Drop; Every Week.</h1>
+                <a href="login.html" class="btn mt-3 text-uppercase">SHOP NOW</a>
+            </div>
+            <div class="text-center carousel-item">
+              <h2 class="text-uppercase text-white">20% Discounts</h2>
+              <h1 class="text-uppercase py-2 fw-bold text-white">Dont miss it</h1>
+              <a href="login.html" class="btn mt-3 text-uppercase">Buy now</a>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+        data-bs-target="#header" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+        data-bs-target="#header" data-bs-slide="prev">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+    <!--Hero ends here-->
+
+
+    <!--Newdrop starts here-->
+    <section id="newdrop" class="wrapper">
+     <div class="container">
+      <div class="title text-center">
+        <h2 class="position-relative d-inline-block" data-aos="zoom-in" data-aos-duration
+        ="1500">New Drop</h2>
+      </div>
+        <div class="row g-0">
+          <!-- <div class="d-flex flex-wrap justify-content-center mt-5
+          filter-button-group">
+           <button type="button" class="btn text-center m-2 text-dark active-filter-btn" data-filter="*">All</button>
+           <button type="button" class="btn text-center m-2 text-dark" data-filter=".tees">Tees</button>
+           <button type="button" class="btn text-center m-2 text-dark" data-filter=".shorts">Shorts</button>
+           <button type="button" class="btn text-center m-2 text-dark" data-filter=".pants">Pants</button>
+          </div> -->
+
+          <div class="row collection-list mt-4 gx-0 gy-3">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 pants border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/311787112_1242067409697168_8062683734865432741_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Pants</p>
+                <span class="fw-bold">₦5000</span>  
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 shorts border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/314802591_1275183069999079_3602406901287268174_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Shorts</p>
+                <span class="fw-bold">₦3000</span>  
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 tees border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/324070983_5461610797277792_9199469784782709336_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Tee</p>
+                <span class="fw-bold">₦2000</span>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 shorts border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/314723629_614614850408544_291477937291222706_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Shorts</p>
+                <span class="fw-bold">₦2500</span>  
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 pants border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/311644485_481110347100049_8977194881336544061_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Pants</p>
+                <span class="fw-bold">₦4500</span>  
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 tees border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/324553902_1787670261612415_6169071807899884987_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Tee</p>
+                <span class="fw-bold">₦3000</span>  
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/332360377_3526689050986663_4089052970967235500_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Gym Top</p>
+                <span class="fw-bold">₦3000</span>  
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 border-bottom">
+              <div class="collection-img">
+                <img class="w-100" src="img/img/332063789_874782433638296_5698683437471780818_n.jpg" alt="">
+              </div>
+              <div class="text-center">
+                <p class="my-1">Gym Top</p>
+                <span class="fw-bold">₦3000</span>  
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+     </div>
+    </section>
+    <!--New drop ends here-->
+
+
+    <!--featured Products-->
+    <section id="featured" class="wrapper py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block"
+          data-aos="zoom-in" data-aos-duration="1500">Featured</h2>
+        </div>
+
+        <div class="special-list row g-0">
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img overflow-hidden">
+              <img 
+              data-aos="" 
+              data-aos-duration="" src="img/img/pexels-davide-de-giovanni-1649675.jpg" class="w-100">
+            </div>
+            <div class="text-center">
+              <p class="text-capitalize mt-3 mb-1">Jacket</p>
+              <span class="fw-bold d-block">₦10,000</span>
+              <a href="" class="btn mt-3">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img">
+              <img src="img/img/pexels-k-makhasette-8372217.jpg" class="w-100">
+            </div>
+            <div class="text-center">
+              <p class="text-capitalize mt-3 mb-1">Blvck Shirt</p>
+              <span class="fw-bold d-block">₦12000</span>
+              <a href="" class="btn mt-3">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img">
+              <img src="img/img/pexels-evan-velez-saxer-9696164.jpg" class="w-100">
+            </div>
+            <div class="text-center">
+              <p class="text-capitalize mt-3 mb-1">Hoodie & Cargo Pants</p>
+              <span class="fw-bold d-block">₦16000</span>
+              <a href="" class="btn mt-3">Add To Cart</a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+            <div class="special-img">
+              <img src="img/img/pexels-evan-velez-saxer-9696097.jpg" class="w-100">
+            </div>
+            <div class="text-center">
+              <p class="text-capitalize mt-3 mb-1">Black Hoodie & Cargo Pants</p>
+              <span class="fw-bold d-block">₦15000</span>
+              <a href="" class="btn mt-3">Add To Cart</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--End of Featured Products-->
+
+
+    <!--Offers-->
+    <section id="offers" class="wrapper">
+      <div class="container">
+          <div class="row d-flex
+          justify-content-center align-items-center text-center justify-content-lg-start">
+              <div class="offers-content">
+                  <span class="text-white">
+                      50% on all 1st purchases!
+                  </span>
+                  <h2 class="mt-2 mb-4 text-white">GRAND SALE OFFER</h2>
+                  <a href="" class="btn">SHOP</a>
+              </div>
+          </div>
+      </div>
+     </section>
+     <!--Offers-->
+
+     <!--About us-->
+     <section id="about" class="wrapper">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center gy-lg-5">
+          <div class="col-lg-6 text-center">
+            <div class="title pt-3 pb-5 text-center">
+              <h2 class="position-relative d-inline-block ms-4 mb-3">
+                About Us
+              </h2>
+              <p class="text-capitalize text text-muted">Here's what we are all about</p>
+              <p class="text-capitalize">
+                More for less money! That is our catchphrase. 
+                Finding the ideal item of apparel that complements your style and matches your budget is the ultimate feeling. 
+                Use <strong>Threadz</strong> to accomplish it.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="w-100 img-fluid" src="img/img/331631071_729565371961318_5562666889429661329_n.jpg" alt="">
+          </div>
+        </div>
+      </div>
+     </section>
+     <!--About us ends here-->
+
+
+     <!--Popular-->
+     
+     <!-- <section id="popular" class="wrapper py-5">
+      <div class="container">
+        <div class="title text-center pt-3 pb-5">
+          <h2 class="position-relative d-inline-block ms-4 text-capitalize">
+            POPULAR OF THE YEAR
+          </h2>
+        </div>
+        <div class="row">
+          <div class=" text-center col-md-6 col-lg-4 row g-3">
+            <h3 class="fs-5">Top Rated</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 row g-3">
+            <h3 class="fs-5">Best selling</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 row g-3">
+            <h3 class="fs-5">On sale</h3>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-start justify-content-start">
+              <img class="img-fluid pe-3 w-25 " src="img/img/pexels-cheef-2080753.jpg" alt="">
+              <div>
+                <p class="mb-0">
+                  Cloth
+                </p>
+                <span>₦2000</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> -->
+     </section>
+
+     <!--Popular ends here-->
+
+
+
+     <!--Newsletter-->
+     <section id="newsletter" class="wrapper">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="title text-center pt-3 pb-5">
+            <h2 class="d-inline-block position-relative ms-4">
+              Newsletter
+            </h2>
+          </div>
+          <p class="text-center text-muted text-capitalize">
+              Sign up to our newsletter, never miss any updates.
+          </p>
+          <div class="input-group mb-3 mt-3">
+            <input type="text" class="form-control" placeholder="Enter Your Email...">
+            <button class="btn" type="submit">Subscribe</button>
+          </div>
+        </div>
+
+      </div>
+
+     </section>
+     <!--Newsletter ends here-->
+
+
+
+     <!--Footer-->
+     <footer class="py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+
+          <div class="col-md-6 col-lg-3">
+            <a href="index.html" class="text-uppercase text-decoration-none
+            brand text-white">
+            <img src="img/logoipsum-249.svg" alt="">
+            threadz
+            </a>
+            <p class="text-white text-muted mt-3">
+              The greatest approach to save money, build a distinctive wardrobe, and maintain your sense of style is to purchase at Threadz, where you can get one-of-a-kind, high-quality things that are affordable.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light text-uppercase">Links</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a href="#header" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i>
+                  Home
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#newdrop" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i>
+                  New Drop 
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#about" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i>
+                  About Us
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="blog.html" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i>
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3 text-uppercase">Contact Us</h5>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light">
+                University of Ibadan
+              </span>
+            </div>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light">
+                threadz@gmail.com
+              </span>
+            </div>
+            <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light">
+                0000441112
+              </span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3 text-uppercase">Follow Us</h5>
+            <div class="d-flex">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="fab fa-facebook-f"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="text-white text-decoration-none text-muted fs-4 me-4">
+                    <i class="fab fa-tiktok"></i>
+                    Tik-Tok
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+     </footer>
+     <!--Footer ends here-->
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Isotope JS-->
+    <script src="/path/to/isotope.pkgd.min.js"></script>
+
+    <!--Jquery-->
+    <script src="js/jquery-3.6.3.js"></script>
+
+    <!--Bootstrap CDN JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+     <!--Animate on scroll js-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+        AOS.init();
+      </script>
+
+      <!--Wow Min js-->
+      <script>
+      new WOW().init();
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
